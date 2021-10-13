@@ -8,8 +8,11 @@
 #home_section {
     display: grid;
     grid-template-rows: 80% 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100vw;
-    height: 100vh;
+    overflow-y: hidden;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: white;
