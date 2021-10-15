@@ -4,45 +4,58 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
+:root {
+    --main-color: #2c3547;
+    --secondary-color: #080b10;
+    --main-font: 'Raleway', sans-serif;
+}
+
+/*Home Page Styles*/
 #home_section {
-    display: grid;
-    grid-template-rows: 10% 90%;
+    width: 100vw;
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100vw;
-    overflow-y: hidden;
+    display: grid;
+    grid-template-rows: 10% 90%;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    background-color: #2c3547;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
+    overflow-y: hidden;
 }
 .sections_links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: flex-start;
-    background-color: #080b10;
+    background-color: var(--secondary-color);
 }
 .sections_links a{
     margin: 2vh 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--main-font);
     text-decoration: none;
     color: white;
 }
 #home__central-content {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    align-items: flex-start;
     width: 100%;
     height: 80%;
     margin-top: 35px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: flex-start;
 }
 .profile-picture-container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#profile_picture img {
+    width: 90%;
+    margin: 10px 0px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 20px 0px #080b10;
 }
 .profile-picture-container h1{
     font-size: 25px;
@@ -51,11 +64,6 @@
 .profile-picture-container h2{
     font-size: 20px;
     font-weight: lighter;
-}
-#profile_picture img {
-    margin: 10px 0px;
-    width: 90%;
-    border-radius: 50%;
 }
 .social-media-links-container {
     display: grid;
