@@ -13,13 +13,15 @@
 }
 .main-page {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    position: absolute;
+    top: 0;
     text-align: center;
     font-family: var(--main-font);
     background-color: var(--main-color);
-    overflow-y: hidden;
+    
 }
-.sections_links {
+.links__navbar {
     width: 100vw;
     height: 40px;
     position: fixed;
@@ -30,7 +32,7 @@
     align-items: center;
     background-color: var(--secondary-color);
 }
-.sections_links a{
+.links__navbar a{
     font-family: var(--main-font);
     text-decoration: none;
     color: white;
@@ -42,35 +44,11 @@
     grid-template-columns: 80% 20%;
     align-items: flex-start;
 }
-
-/*Home Page Styles*/
-#home__central-content {
-    margin-top: 120px;
-}
-#home_section {
-    display: grid;
-    grid-template-rows: 10% 90%;
-}
-
-.profile-picture-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 #profile_picture img {
-    width: 90%;
+    width: 230px;
     margin: 10px 0px;
     border-radius: 50%;
     box-shadow: 3px 0px 20px 0px #080b10;
-}
-.profile-picture-container h1{
-    font-size: 25px;
-    font-weight: lighter;
-}
-.profile-picture-container h2{
-    font-size: 20px;
-    font-weight: lighter;
 }
 .social-media-links-container {
     display: grid;
@@ -93,45 +71,74 @@
     align-self: flex-start;
 }
 
+
+/*Home Page Styles*/
+#home_section {
+    height: 100vh;
+}
+#home__central-content {
+    margin-top: calc(50vh - 153px);
+}
+#profile-picture__container--home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile-picture__container--home h1{
+    font-size: 25px;
+    font-weight: lighter;
+}
+#profile-picture__container--home h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
 /*Projects Page Styles*/
 #projects_section{
     height: auto;
     overflow-y: scroll;
 }
 #projects-container {
-    margin: 80px 10vw 30px;
+    margin: 80px 30px 30px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
 .project-div {
-    width: 80vw;
-    height: 35vh;
+    width: 256px;
+    height: 170px;
     margin-bottom: 30px; 
 }
 
 .project-div .project-tile{
-    display: block;
     width: 100%;
     height: fit-content;
     padding: 10px 0px;
     margin-top: 45px;
+    display: block;
     font-size: 16px;
     text-decoration: none;
     color: white;
-    background-color: rgba(8, 11, 16, 0.8);}
+    background-color: rgba(8, 11, 16, 0.8);
+}
 
 #google-home-clone {
     background-image: url("./assets/images/google-clone.png");
     background-size: cover;
 }
+
 #technical_documentation_page {
     background-image: url("./assets/images/technical_documentation_web_page.png");
     background-size: cover;
 }
+
 #product_landing_page {
     background-image: url("./assets/images/product_landing_page.png");
     background-size: cover;
 }
+
 #tribute_web_page {
     background-image: url("./assets/images/tribute_web_page.png");
     background-size: cover;
@@ -139,9 +146,9 @@
 
 /*About Me Page Styles*/
 #profile-picture--about-me{
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: calc(50vh - 153px);
+    margin-bottom: 10px;
 }
 #about-me__section article {
-    margin: 0 15px;
+    margin: 0px 15px 30px;
 }
