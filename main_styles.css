@@ -139,6 +139,9 @@
 
 /*About Me Page Styles*/
 #profile-picture--about-me{
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 20px;
+}
+#about-me__section article {
+    margin: 0 15px;
 }
