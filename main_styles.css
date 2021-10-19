@@ -11,36 +11,40 @@
     --secondary-color: #080b10;
     --main-font: 'Raleway', sans-serif;
 }
-
-/*Home Page Styles*/
-#home_section {
+.main-page {
     width: 100vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-rows: 10% 90%;
+    height: 100vh;
     text-align: center;
     font-family: var(--main-font);
     background-color: var(--main-color);
     overflow-y: hidden;
 }
 .sections_links {
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: flex-start;
+    align-items: center;
     background-color: var(--secondary-color);
 }
 .sections_links a{
-    margin: 2vh 0px;
     font-family: var(--main-font);
     text-decoration: none;
     color: white;
 }
+
+/*Home Page Styles*/
+#home_section {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
 #home__central-content {
     width: 100%;
     height: 80%;
-    margin-top: 35px;
+    margin-top: 20vh;
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: flex-start;
@@ -86,3 +90,46 @@
     align-self: flex-start;
 }
 
+/*Projects Page Styles*/
+#projects_section{
+    height: auto;
+    overflow-y: scroll;
+}
+#projects-container {
+    margin: 18vh 10vw 4vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.project-div {
+    width: 80vw;
+    height: 35vh;
+    margin-bottom: 30px; 
+}
+
+.project-div .project-tile{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    margin-top: 45px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(8, 11, 16, 0.8);}
+
+#google-home-clone {
+    background-image: url("./assets/images/google-clone.png");
+    background-size: cover;
+}
+#technical_documentation_page {
+    background-image: url("./assets/images/technical_documentation_web_page.png");
+    background-size: cover;
+}
+#product_landing_page {
+    background-image: url("./assets/images/product_landing_page.png");
+    background-size: cover;
+}
+#tribute_web_page {
+    background-image: url("./assets/images/tribute_web_page.png");
+    background-size: cover;
+}
