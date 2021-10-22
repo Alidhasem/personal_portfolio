@@ -11,8 +11,8 @@
     --main-font: 'Raleway', sans-serif;
 }
 body {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     font-family: var(--main-font);
     background-color: var(--main-color);
     color: white;
@@ -22,6 +22,7 @@ body {
     height: 40px;
     position: fixed;
     top: 0;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,7 +31,13 @@ body {
 .links__navbar a {
     font-family: var(--main-font);
     text-decoration: none;
+    font-size: 18px;
     color: white;
+}
+.central-content__section{
+    width: 100%;
+    position: absolute;
+    top: calc(50vh - 158px);
 }
 .profile-picture-section {
     width: 100%;
@@ -67,11 +74,6 @@ body {
 
 
 /*Home Page Styles*/
-#home-page-content {
-    width: 100%;
-    position: absolute;
-    top: calc(50vh - 158px);
-}
 #home-page-content h1, #home-page-content h2{
     width: 80%;
     text-align: center;
@@ -83,15 +85,13 @@ body {
 }
 #home-page-content h2 {
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 20px;
+    font-style: italic;
 }
+
 
 
 /*Projects Page Styles*/
-#projects_section{
-    height: auto;
-    overflow-y: scroll;
-}
 #projects-container {
     margin: 80px 30px 30px;
     display: grid;
@@ -102,44 +102,45 @@ body {
     height: 170px;
     margin-bottom: 30px; 
 }
-
 .project-div .project-tile{
     width: 100%;
     height: fit-content;
     padding: 10px 0px;
     margin-top: 45px;
     display: block;
-    font-size: 16px;
+    text-align: center;
+    font-size: 17px;
     text-decoration: none;
     color: white;
     background-color: rgba(8, 11, 16, 0.8);
 }
-
 #google-home-clone {
     background-image: url("./assets/images/google-clone.png");
     background-size: cover;
 }
-
 #technical_documentation_page {
     background-image: url("./assets/images/technical_documentation_web_page.png");
     background-size: cover;
 }
-
 #product_landing_page {
     background-image: url("./assets/images/product_landing_page.png");
     background-size: cover;
 }
-
 #tribute_web_page {
     background-image: url("./assets/images/tribute_web_page.png");
     background-size: cover;
 }
+
 
 /*About Me Page Styles*/
 #profile-picture--about-me{
     margin-top: calc(50vh - 153px);
     margin-bottom: 10px;
 }
-#about-me__section article {
-    margin: 0px 15px 30px;
+#about-me-text {
+    margin: 20px 15px;
+    text-align: center;
+}
+#about-me-text p {
+    margin-bottom: 10px;
 }
