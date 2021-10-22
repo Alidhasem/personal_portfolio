@@ -1,0 +1,45 @@
+@media (min-width: 650px) {
+    .links__navbar {
+        width: 20%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .central-content__section {
+        width: 80%;
+        position: absolute;
+        right: 0;
+        display: flex;
+    }
+    .profile-picture-section {
+        width: 70%;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .social-media-links-container{
+        width: 230px;
+        height: 70px;
+        justify-self: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #home-headers h1 {
+        margin: 0;
+    } 
+    #home-headers h2{
+        margin-top: 20px;
+    }
+    #home-headers {
+       margin-top: 55px;
+    }
+    #projects-container{
+        width: 80%;
+        position: absolute;
+        right: 0;
+    }
+    #about-me-text {
+        width: 30%;
+    }
+}
